@@ -1,0 +1,9 @@
+c:\users\justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\bin\Debug\shadowDemonLord.exe.config
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\bin\Debug\shadowDemonLord.exe
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\bin\Debug\shadowDemonLord.pdb
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\obj\Debug\shadowDemonLord.csprojResolveAssemblyReference.cache
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\obj\Debug\shadowDemonLord.Form1.resources
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\obj\Debug\shadowDemonLord.Properties.Resources.resources
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\obj\Debug\shadowDemonLord.csproj.GenerateResource.Cache
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\obj\Debug\shadowDemonLord.exe
+C:\Users\Justin\documents\visual studio 2015\Projects\shadowDemonLord\shadowDemonLord\obj\Debug\shadowDemonLord.pdb
