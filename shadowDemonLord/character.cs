@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace shadowDemonLord
 {
+    [Serializable]
     public class character
     {
         private string level;
@@ -63,6 +64,9 @@ namespace shadowDemonLord
         private string power;
         private string def;
         private string perception;
+
+        
+        public List<spell> Spells = new List<spell>();
 
         public string Level
         {

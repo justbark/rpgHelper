@@ -113,6 +113,8 @@ namespace shadowDemonLord
                     TextBox descriptionTxtBx = ((TextBox)this.Controls.Find("description" + spellCount + "TxtBox", true)[0]);
                     Spell.Description = descriptionTxtBx.Text;
 
+                    Character.Spells.Add(Spell);
+
                 }
 
                 XmlData.saveData(Character, textDialog.FileName);
@@ -252,6 +254,7 @@ namespace shadowDemonLord
             spellPanel.Controls.Add(txtBx6);
 
             yLocation += 71;
+
         }
 
     }

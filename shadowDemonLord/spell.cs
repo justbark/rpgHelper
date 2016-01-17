@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace shadowDemonLord
 {
+    [Serializable]
     public class spell
     {
         private int spellNumber;
