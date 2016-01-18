@@ -212,48 +212,7 @@ namespace shadowDemonLord
 
         private void addSpellBtn_Click(object sender, EventArgs e)
         {
-            spellCount++;
-            int vscrollPos = spellPanel.VerticalScroll.Value;
-
-            TextBox txtBx1 = new TextBox();
-            txtBx1.Name = "spellName" + spellCount + "TxtBox";
-            txtBx1.Size = new Size(75,22);
-            txtBx1.Location = new Point(3, yLocation - vscrollPos);
-
-            TextBox txtBx2 = new TextBox();
-            txtBx2.Name = "castsPerDay" + spellCount + "TxtBox";
-            txtBx2.Size = new Size(40, 22);
-            txtBx2.Location = new Point(100, yLocation - vscrollPos);
-
-            TextBox txtBx3 = new TextBox();
-            txtBx3.Name = "casts" + spellCount + "TxtBox";
-            txtBx3.Size = new Size(40, 22);
-            txtBx3.Location = new Point(167, yLocation - vscrollPos);
-
-            TextBox txtBx4 = new TextBox();
-            txtBx4.Name = "rank" + spellCount + "TxtBox";
-            txtBx4.Size = new Size(40, 22);
-            txtBx4.Location = new Point(220, yLocation - vscrollPos);
-
-            TextBox txtBx5 = new TextBox();
-            txtBx5.Name = "statVStat" + spellCount + "TxtBox";
-            txtBx5.Size = new Size(90, 22);
-            txtBx5.Location = new Point(270, yLocation - vscrollPos);
-
-            TextBox txtBx6 = new TextBox();
-            txtBx6.Name = "description" + spellCount + "TxtBox";
-            txtBx6.Size = new Size(275 , 65);
-            txtBx6.Location = new Point(370, yLocation - vscrollPos);
-            txtBx6.Multiline = true;
-
-            spellPanel.Controls.Add(txtBx1);
-            spellPanel.Controls.Add(txtBx2);
-            spellPanel.Controls.Add(txtBx3);
-            spellPanel.Controls.Add(txtBx4);
-            spellPanel.Controls.Add(txtBx5);
-            spellPanel.Controls.Add(txtBx6);
-
-            yLocation += 71;
+            
 
         }
 

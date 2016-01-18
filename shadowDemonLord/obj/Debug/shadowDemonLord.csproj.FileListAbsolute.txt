@@ -16,3 +16,4 @@ C:\Users\Justin\Documents\GitHub\rpgHelper\shadowDemonLord\obj\Debug\shadowDemon
 C:\Users\Justin\Documents\GitHub\rpgHelper\shadowDemonLord\obj\Debug\shadowDemonLord.Form1.resources
 C:\Users\Justin\Documents\GitHub\rpgHelper\shadowDemonLord\obj\Debug\shadowDemonLord.Properties.Resources.resources
 C:\Users\Justin\Documents\GitHub\rpgHelper\shadowDemonLord\obj\Debug\shadowDemonLord.csproj.GenerateResource.Cache
+C:\Users\Justin\Documents\GitHub\rpgHelper\shadowDemonLord\obj\Debug\shadowDemonLord.spellForm.resources

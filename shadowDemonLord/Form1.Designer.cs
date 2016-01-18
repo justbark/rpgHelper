@@ -149,13 +149,8 @@
             this.inventoryTextBox = new System.Windows.Forms.TextBox();
             this.pathsTab = new System.Windows.Forms.TabPage();
             this.spellBookTab = new System.Windows.Forms.TabPage();
+            this.spellListBx = new System.Windows.Forms.ListBox();
             this.addSpellBtn = new System.Windows.Forms.Button();
-            this.descriptionLbl = new System.Windows.Forms.Label();
-            this.statVStatLbl = new System.Windows.Forms.Label();
-            this.rankLbl = new System.Windows.Forms.Label();
-            this.CastsLbl = new System.Windows.Forms.Label();
-            this.castLbl = new System.Windows.Forms.Label();
-            this.spellNameLbl = new System.Windows.Forms.Label();
             this.diceGroupBox = new System.Windows.Forms.GroupBox();
             this.rollButton = new System.Windows.Forms.Button();
             this.resultLabelToChange = new System.Windows.Forms.Label();
@@ -171,7 +166,10 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.diceList = new System.Windows.Forms.ListBox();
-            this.spellPanel = new System.Windows.Forms.Panel();
+            this.spellNameLabel = new System.Windows.Forms.Label();
+            this.spellNameLabelToChange = new System.Windows.Forms.Label();
+            this.rankLabel = new System.Windows.Forms.Label();
+            this.rankLabelToChange = new System.Windows.Forms.Label();
             this.charInfoGroupBox.SuspendLayout();
             this.otherInfoGroupBox.SuspendLayout();
             this.attributeGroupBox.SuspendLayout();
@@ -1301,20 +1299,27 @@
             // 
             // spellBookTab
             // 
-            this.spellBookTab.Controls.Add(this.spellPanel);
+            this.spellBookTab.Controls.Add(this.rankLabelToChange);
+            this.spellBookTab.Controls.Add(this.rankLabel);
+            this.spellBookTab.Controls.Add(this.spellNameLabelToChange);
+            this.spellBookTab.Controls.Add(this.spellNameLabel);
+            this.spellBookTab.Controls.Add(this.spellListBx);
             this.spellBookTab.Controls.Add(this.addSpellBtn);
-            this.spellBookTab.Controls.Add(this.descriptionLbl);
-            this.spellBookTab.Controls.Add(this.statVStatLbl);
-            this.spellBookTab.Controls.Add(this.rankLbl);
-            this.spellBookTab.Controls.Add(this.CastsLbl);
-            this.spellBookTab.Controls.Add(this.castLbl);
-            this.spellBookTab.Controls.Add(this.spellNameLbl);
             this.spellBookTab.Location = new System.Drawing.Point(4, 25);
             this.spellBookTab.Name = "spellBookTab";
             this.spellBookTab.Size = new System.Drawing.Size(901, 305);
             this.spellBookTab.TabIndex = 4;
             this.spellBookTab.Text = "Spellbook";
             this.spellBookTab.UseVisualStyleBackColor = true;
+            // 
+            // spellListBx
+            // 
+            this.spellListBx.FormattingEnabled = true;
+            this.spellListBx.ItemHeight = 16;
+            this.spellListBx.Location = new System.Drawing.Point(9, 10);
+            this.spellListBx.Name = "spellListBx";
+            this.spellListBx.Size = new System.Drawing.Size(209, 276);
+            this.spellListBx.TabIndex = 8;
             // 
             // addSpellBtn
             // 
@@ -1325,60 +1330,6 @@
             this.addSpellBtn.Text = "Add Spell";
             this.addSpellBtn.UseVisualStyleBackColor = true;
             this.addSpellBtn.Click += new System.EventHandler(this.addSpellBtn_Click);
-            // 
-            // descriptionLbl
-            // 
-            this.descriptionLbl.AutoSize = true;
-            this.descriptionLbl.Location = new System.Drawing.Point(510, 6);
-            this.descriptionLbl.Name = "descriptionLbl";
-            this.descriptionLbl.Size = new System.Drawing.Size(79, 17);
-            this.descriptionLbl.TabIndex = 6;
-            this.descriptionLbl.Text = "Description";
-            // 
-            // statVStatLbl
-            // 
-            this.statVStatLbl.AutoSize = true;
-            this.statVStatLbl.Location = new System.Drawing.Point(387, 6);
-            this.statVStatLbl.Name = "statVStatLbl";
-            this.statVStatLbl.Size = new System.Drawing.Size(77, 17);
-            this.statVStatLbl.TabIndex = 5;
-            this.statVStatLbl.Text = "Stat v. Stat";
-            // 
-            // rankLbl
-            // 
-            this.rankLbl.AutoSize = true;
-            this.rankLbl.Location = new System.Drawing.Point(303, 6);
-            this.rankLbl.Name = "rankLbl";
-            this.rankLbl.Size = new System.Drawing.Size(41, 17);
-            this.rankLbl.TabIndex = 4;
-            this.rankLbl.Text = "Rank";
-            // 
-            // CastsLbl
-            // 
-            this.CastsLbl.AutoSize = true;
-            this.CastsLbl.Location = new System.Drawing.Point(237, 6);
-            this.CastsLbl.Name = "CastsLbl";
-            this.CastsLbl.Size = new System.Drawing.Size(43, 17);
-            this.CastsLbl.TabIndex = 3;
-            this.CastsLbl.Text = "Casts";
-            // 
-            // castLbl
-            // 
-            this.castLbl.AutoSize = true;
-            this.castLbl.Location = new System.Drawing.Point(126, 6);
-            this.castLbl.Name = "castLbl";
-            this.castLbl.Size = new System.Drawing.Size(93, 17);
-            this.castLbl.TabIndex = 2;
-            this.castLbl.Text = "casts per day";
-            // 
-            // spellNameLbl
-            // 
-            this.spellNameLbl.AutoSize = true;
-            this.spellNameLbl.Location = new System.Drawing.Point(32, 6);
-            this.spellNameLbl.Name = "spellNameLbl";
-            this.spellNameLbl.Size = new System.Drawing.Size(78, 17);
-            this.spellNameLbl.TabIndex = 1;
-            this.spellNameLbl.Text = "Spell name";
             // 
             // diceGroupBox
             // 
@@ -1506,13 +1457,41 @@
             this.diceList.Size = new System.Drawing.Size(246, 52);
             this.diceList.TabIndex = 42;
             // 
-            // spellPanel
+            // spellNameLabel
             // 
-            this.spellPanel.AutoScroll = true;
-            this.spellPanel.Location = new System.Drawing.Point(9, 29);
-            this.spellPanel.Name = "spellPanel";
-            this.spellPanel.Size = new System.Drawing.Size(886, 273);
-            this.spellPanel.TabIndex = 8;
+            this.spellNameLabel.AutoSize = true;
+            this.spellNameLabel.Location = new System.Drawing.Point(240, 10);
+            this.spellNameLabel.Name = "spellNameLabel";
+            this.spellNameLabel.Size = new System.Drawing.Size(84, 17);
+            this.spellNameLabel.TabIndex = 9;
+            this.spellNameLabel.Text = "Spell Name:";
+            // 
+            // spellNameLabelToChange
+            // 
+            this.spellNameLabelToChange.AutoSize = true;
+            this.spellNameLabelToChange.Location = new System.Drawing.Point(278, 27);
+            this.spellNameLabelToChange.Name = "spellNameLabelToChange";
+            this.spellNameLabelToChange.Size = new System.Drawing.Size(92, 17);
+            this.spellNameLabelToChange.TabIndex = 10;
+            this.spellNameLabelToChange.Text = "Select a spell";
+            // 
+            // rankLabel
+            // 
+            this.rankLabel.AutoSize = true;
+            this.rankLabel.Location = new System.Drawing.Point(498, 10);
+            this.rankLabel.Name = "rankLabel";
+            this.rankLabel.Size = new System.Drawing.Size(45, 17);
+            this.rankLabel.TabIndex = 11;
+            this.rankLabel.Text = "Rank:";
+            // 
+            // rankLabelToChange
+            // 
+            this.rankLabelToChange.AutoSize = true;
+            this.rankLabelToChange.Location = new System.Drawing.Point(520, 27);
+            this.rankLabelToChange.Name = "rankLabelToChange";
+            this.rankLabelToChange.Size = new System.Drawing.Size(92, 17);
+            this.rankLabelToChange.TabIndex = 12;
+            this.rankLabelToChange.Text = "Select a spell";
             // 
             // Form1
             // 
@@ -1707,13 +1686,11 @@
         private System.Windows.Forms.TextBox levelTextBox;
         private System.Windows.Forms.Label levelLabel;
         private System.Windows.Forms.Button addSpellBtn;
-        private System.Windows.Forms.Label descriptionLbl;
-        private System.Windows.Forms.Label statVStatLbl;
-        private System.Windows.Forms.Label rankLbl;
-        private System.Windows.Forms.Label CastsLbl;
-        private System.Windows.Forms.Label castLbl;
-        private System.Windows.Forms.Label spellNameLbl;
-        private System.Windows.Forms.Panel spellPanel;
+        private System.Windows.Forms.ListBox spellListBx;
+        private System.Windows.Forms.Label rankLabelToChange;
+        private System.Windows.Forms.Label rankLabel;
+        private System.Windows.Forms.Label spellNameLabelToChange;
+        private System.Windows.Forms.Label spellNameLabel;
     }
 }
 
